@@ -22,8 +22,6 @@
                 <th scope="col">#</th>
                 <th scope="col">Class Name</th>
                 <th scope="col">Section Name</th>
-
-
               </tr>
             </thead>
             <tbody>

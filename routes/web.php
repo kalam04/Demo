@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SectionsController;
 use App\Http\Controllers\ClassController;
 use App\Models\Classes;
+use App\Http\Controllers\ClassTimeTableController;
+
 
 
 /*
@@ -44,4 +46,10 @@ Route::get('/check', function () {
 
 Route::resource('section', SectionsController::class);
 Route::resource('class', ClassController::class);
+Route::post('class-time-table/search', [ClassTimeTableController::class,'search'])->name('Search');;
+Route::resource('class-time-table', ClassTimeTableController::class);
+Route::get('/addClasseTimeTable', function () {
+    dd("comes");
+});
+
 
